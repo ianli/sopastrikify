@@ -1,7 +1,7 @@
 SOPAStrikify
 ============
 
-This is a Javascript utility to blackout websites on January 18, 2012 from 8:00 AM to 8:00 PM EST. During that time, this utility will show the website at http://sopastrike.org/strike/.
+This is a Javascript utility to blackout websites on January 18, 2012 from 8:00 AM to 8:00 PM EST. During that time, this utility will show the website at http://sopastrike.com/strike/.
 
 It works by creating an IFrame that is overlaid on top of the web page. The IFrame completely covers the whole web page, so that the original web page is obscured.
 
