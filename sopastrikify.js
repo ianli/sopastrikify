@@ -1,5 +1,5 @@
 /*!
- * SOPAStrikify.js
+ * SOPAstrikify.js
  * http://github.com/ianli/sopastrikify/
  *
  * Copyright 2012 Ian Li, http://ianli.com
