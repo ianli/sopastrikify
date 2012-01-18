@@ -4,10 +4,50 @@
   <title>SOPAStrikify.js</title>
   
   <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css" />
-  
-  <script type="text/javascript" src="sopastrikify.js"></script>
+  <style type="text/css">
+    .hero-unit {
+      margin-top:150px;
+      text-align:center;
+    }
+    footer {
+      margin-top:100px;
+      text-align:center;
+    }
+  </style>
 </head>
 <body>
-  
+
+<div class="container">
+  <div class="hero-unit">
+    <h1>SOPAStrikify.js</h1>
+    <p>
+      On January 18, 2012 from 8:00 AM to 8:00 PM EST, this web page will go dark in protest of SOPA.
+    </p>
+    <p>
+      <button class="btn danger" id="preview">Preview for 10 seconds</button>
+      <a href="http://github.com/ianli/sopastrikify/" class="btn info">Get the Code &raquo;</a>
+    </p>
+  </div>
+  <footer>
+    Copyright 2012 <a href="http://ianli.com">Ian Li</a>.
+    Licensed under <a href="http://www.opensource.org/licenses/mit-license.php">the MIT License</a>.
+  </footer>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ianli.github.com/sopastrikify/sopastrikify.js"></script>
+<script type="text/javascript">
+  $(function () {
+    $('#preview').click(function () {
+      sopaStrikifyJQuery();
+      
+      setTimeout(function () {
+        $('iframe').fadeOut('slow', function () {
+          $(this).remove();
+        });
+      }, 10000);
+    });
+  });
+</script>
 </body>
 </html>
