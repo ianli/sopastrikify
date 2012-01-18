@@ -19,7 +19,7 @@
         // Create the IFrame.
         var iframe = document.createElement('iframe');
         iframe.src = url;
-        iframe.style.cssText = 'position:absolute;top:0;width:100%;height:100%;z-index:1000000000;border:none;';
+        iframe.style.cssText = 'position:absolute;top:0;width:100%;height:100%;z-index:1000000000;background-color:#000;border:none;';
 
         // Append it to the body.
         var body = document.getElementsByTagName('body')[0];
@@ -40,6 +40,7 @@
             width: '100%',
             height: '100%',
             zIndex: '1000000000',
+            backgroundColor: '#000',
             border: 'none'
           })
 
@@ -69,4 +70,8 @@
     }
     
   }
+  
+  // Make sopaStrikify available globally.
+  window.sopaStrikify = sopaStrikify;
+  window.sopaStrikifyJQuery = sopaStrikifyJQuery;
 })();
